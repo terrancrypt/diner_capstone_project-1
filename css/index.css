@@ -1,7 +1,17 @@
 /* GLOBAL */
-*{
+* {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(22, 28, 45, 0.7);
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* HEADING */
@@ -15,6 +25,52 @@
 /* CATEGORIES */
 
 /* FEATURES */
+#features .box-wrap {
+    padding: 40px 40px;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+    background-color: white;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+#features .box-wrap p {
+    margin: 0;
+}
+
+#features .box-wrap h4 a {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    display: block;
+    color: var(--heading-color);
+}
+
+#features .box-wrap-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+}
+
+#features .icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background-color: var(--bg-light);
+    line-height: 70px;
+    border-radius: 6px;
+    color: #ff6600;
+    font-size: 25px;
+    line-height: 70px;
+    transition: 0.3s ease-in-out;
+}
+
+#features .icon:hover {
+    color: white;
+    background-color: #ff6600;
+}
 
 /* CONTACT */
 
@@ -25,4 +81,3 @@
 /* TESTIMONIALS */
 
 /* FOOTER */
-
