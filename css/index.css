@@ -9,7 +9,9 @@
 /* .clear {
     clear: both;
 } thẻ này không cần dùng đến nữa, chỉ sài cho bản float cũ */
-
+html {
+    scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -171,18 +173,20 @@ header {
     background: none;
 }
 
-.header__button button {
+.header__button .button__header {
     background: none;
     border: none;
     font-size: 26px;
 }
-
 .overlay__scale {
-    visibility: hidden;
-    opacity: 0;
+   
     transform: scale(0.9);
+    display: none;
+    
 }
-
+.nav__input:checked ~ .overlay__scale {
+    display: block;
+}
 .header__overlay {
     position: fixed;
     width: 100%;
@@ -193,7 +197,7 @@ header {
     padding-top: 100px;
 }
 
-.header__overlay button {
+.header__overlay .overlay__close {
     width: 46px;
     height: 46px;
     background: #ff6600;
@@ -204,7 +208,23 @@ header {
     top: 20px;
     right: 20px;
 }
+.nav__input {
+    display: none;
+}
+.overlay__close {
+    text-align: center;
+}
 
+.overlay__close i {
+    margin-top: 15px;
+}
+.overlay__scale a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+.overlay__scale a:hover {
+    color: #ff6600;
+}
 .header__overlay li {
     text-decoration: none;
     list-style: none;
@@ -1028,6 +1048,25 @@ footer {
     line-height: 26px;
     color: #a5a2a1;
 }
+#movetop {
+    display: none;
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    padding: 0;
+    line-height: 36px;
+    border-radius: 35px;
+    transition: 0.3s ease-out;
+}
 
 /* ANIMATE */
 @keyframes ripple {
@@ -1084,7 +1123,6 @@ footer {
         font-size: 20px;
     }
 
-
 }
 
 @media (max-width: 991.98px) {
@@ -1122,6 +1160,36 @@ footer {
         min-height: 400px;
     }
 
+    /* header */
+    .header__banner h3{
+        font-size: 28px;
+    }
+    /* content */
+    .content__title {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* content_note2 */
+    .note2__list {
+        flex-direction: column;
+    }
+    .note2__listleft img {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    .note2__listright {
+        width: 100%;
+        padding: 0;
+    }
+    .note2__listright h3 {
+        font-size: 28px;
+        line-height: 1;
+    }
+    listright__content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1137,6 +1205,8 @@ footer {
         font-size: 35px;
         line-height: 40px;
     }
+
+    
 }
 
 @media (max-width: 640px) {
@@ -1145,7 +1215,7 @@ footer {
     .video__image {
         min-height: 350px;
     }
-
+    
 }
 
 @media (max-width: 600px) {
@@ -1163,16 +1233,18 @@ footer {
         font-size: 16px;
     }
 
-
 }
 
 @media (max-width: 575.98px) {
-
     .container,
     .container-sm {
         max-width: 540px;
     }
-
+    /* Ẩn thanh tìm kiếm */
+    .form-group .form-control,
+    .form-group .search__icon{
+        display: none;
+    }
 }
 
 @media (max-width: 480px){
@@ -1186,4 +1258,5 @@ footer {
     #features .box-wrap {
         padding: 30px 30px;
     }
+
 }

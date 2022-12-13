@@ -65,15 +65,17 @@
             </div>
           </div>
           <div class="header__button">
-            <button class="button__header">
+            <label class="button__header" type="checkbox" for="nav__overlay">
               <i class="fa fa-bars"></i>
-            </button>
+            </label>
           </div>
+
         </div>
-        <div class="header__overlay overlay__scale">
-          <button>
+        <input class="nav__input" type="checkbox" id="nav__overlay">
+        <div class="header__overlay overlay__scale"> 
+          <label for="nav__overlay" class="overlay__close">
             <i class="fa fa-times"></i>
-          </button>
+          </label>
           <nav>
             <ul>
               <li>
@@ -719,6 +721,30 @@
         </div>
       </div>
     </div>
+    <button onclick="topfuntion()" id="movetop" style="display: block;">⤴</button>
+    <script>
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topfuntion() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        
+      }
+    
+    </script>
   </section>
 
   <!-- JQuery -->
