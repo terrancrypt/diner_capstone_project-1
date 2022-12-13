@@ -179,10 +179,11 @@ header {
     font-size: 26px;
 }
 .overlay__scale {
-   
-    transform: scale(0.9);
     display: none;
-    
+}
+.overlay__scale {
+    margin: 0px;
+    padding: 0px;  
 }
 .nav__input:checked ~ .overlay__scale {
     display: block;
