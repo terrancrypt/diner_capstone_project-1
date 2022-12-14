@@ -1123,7 +1123,15 @@ footer {
     #features .box-wrap h4 a {
         font-size: 20px;
     }
+    /* content */
+    .content__title {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+    /* content_note2 */
+    .note2__list {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -1188,8 +1196,24 @@ footer {
         font-size: 28px;
         line-height: 1;
     }
-    listright__content {
+    .listright__content {
         width: 100%;
+    }
+    /* categories */
+    .categories__item {
+        max-width: 50%;
+        margin-bottom: -60px;
+    }
+    .cate__item__text {
+        position: relative;
+        top: -60px;
+        left: 30px;
+    }
+    .cate__item__text h6 {
+        font-size: 12px;
+    }
+    .cate__item__text h4 {
+        font-size: 15px;
     }
 }
 
@@ -1206,7 +1230,6 @@ footer {
         font-size: 35px;
         line-height: 40px;
     }
-
     
 }
 
