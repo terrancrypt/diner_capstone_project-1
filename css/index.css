@@ -120,8 +120,9 @@ header {
 .header__title {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 50px;
-    gap: -30px;
+    grid-gap: 20px;
+    padding: 40px 0 20px 0;
+    align-items: center;
 }
 
 .header__logo a {
@@ -133,7 +134,7 @@ header {
 .header__input {
     display: flex;
     justify-content: right;
-    gap: 30px;
+    gap: 20px;
 }
 
 .header__input i {
@@ -178,6 +179,7 @@ header {
     border: none;
     font-size: 26px;
 }
+
 .overlay__scale {
     display: none;
 }
@@ -199,15 +201,15 @@ header {
 }
 
 .header__overlay .overlay__close {
-    width: 46px;
-    height: 46px;
-    background: #ff6600;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
 }
 .nav__input {
     display: none;
@@ -217,7 +219,7 @@ header {
 }
 
 .overlay__close i {
-    margin-top: 15px;
+    margin-top: 12px;
 }
 .overlay__scale a {
     text-decoration: none;
@@ -230,7 +232,7 @@ header {
     text-decoration: none;
     list-style: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     font-weight: 500;
     margin: 20px 0;
@@ -238,6 +240,18 @@ header {
 
 .header__overlay a {
     color: white;
+}
+
+.btn_carousel{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn_carousel:hover{
+    background: #fff;
+    border: 2px solid #fff;
+    color: var(--primary-color);
 }
 
 .header__banner {
@@ -254,7 +268,8 @@ header {
 }
 
 .header__banner p {
-    padding: 30px 0;
+    font-size: 16px;
+    line-height: 28px;
     color: white;
 }
 
@@ -1102,10 +1117,19 @@ footer {
         padding-bottom: 1.5rem !important;
     }
 
+    h1, .h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
 
     h3,
     .h3 {
         font-size: calc(1.3rem + 0.6vw);
+    }
+
+     /* header */
+     .header__banner h3{
+        font-size: 48px;
+        line-height: 58px;
     }
 
 
@@ -1152,6 +1176,12 @@ footer {
         line-height: 30px;
 
     }
+
+     /* header */
+     .header__banner h3{
+        font-size: 44px;
+        line-height: 53px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1161,10 +1191,7 @@ footer {
         min-height: 400px;
     }
 
-    /* header */
-    .header__banner h3{
-        font-size: 28px;
-    }
+   
     /* content */
     .content__title {
         grid-template-columns: repeat(1, 1fr);
