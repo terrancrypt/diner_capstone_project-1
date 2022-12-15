@@ -7,19 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
 
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="./css/magnific-popup.css">
+
   <!-- Font Awesome CDN-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  
+  <!-- ********************************* -->
+  <link href="//fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ********************************* -->
+
   <!-- Google Font CDN-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,15 +65,17 @@
             </div>
           </div>
           <div class="header__button">
-            <button class="button__header">
+            <label class="button__header" type="checkbox" for="nav__overlay">
               <i class="fa fa-bars"></i>
-            </button>
+            </label>
           </div>
+
         </div>
+        <input class="nav__input" type="checkbox" id="nav__overlay">
         <div class="header__overlay overlay__scale">
-          <button>
+          <label for="nav__overlay" class="overlay__close">
             <i class="fa fa-times"></i>
-          </button>
+          </label>
           <nav>
             <ul>
               <li>
@@ -104,16 +111,14 @@
       </div>
       <div class="header__banner">
         <h3>The Only Thing We Love More Than Food Is You!</h3>
-        <p>
+        <p class="pr-lg-5 mt-md-4 mt-3">
           Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
           vitae sit.Ea ipsum sed consequuntur illum facere.
         </p>
-        <a href="">
+        <button class="btn_carousel mt-sm-5 mt-4">
           Read More
-          <span>
-            <i class="fa fa-chevron-right"></i>
-          </span>
-        </a>
+          <i class="fa fa-chevron-right"></i>
+        </button>
       </div>
     </div>
   </header>
@@ -154,7 +159,8 @@
           <div class="listright__content">
             <h6 class="title-subhny two">More than 3000 Restaurants</h6>
             <h3>Book a table easly at the best price</h3>
-            <p>Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis
+              quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
             <div class="listright__cont">
               <div class="listright__cont__1">
                 <div class="cont__icon">
@@ -169,7 +175,7 @@
                 </div>
                 <a href="">Best Deals</a>
                 <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
-               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -178,11 +184,10 @@
   </section>
 
   <!-- CATEGORIES -->
-
   <section class="categotries">
     <div class="container">
       <div class="categories__content">
-        <h6 class="title__h6 text-center" >What's New</h6>
+        <h6 class="title__h6 text-center">What's New</h6>
         <h3 class="title__h3 text-center">Popular Categories</h3>
         <div class="categories__list">
           <!-- item -->
@@ -194,12 +199,12 @@
                 </a>
               </div>
               <div class="cate__item__text">
-                  <a href="">
-                    <h4>Vegetarian</h4>
-                  </a>
-                  <h6>
-                    $350
-                  </h6>
+                <a href="">
+                  <h4>Vegetarian</h4>
+                </a>
+                <h6>
+                  $350
+                </h6>
               </div>
             </div>
           </div>
@@ -213,12 +218,12 @@
                 </a>
               </div>
               <div class="cate__item__text">
-                  <a href="">
-                    <h4>Drinks</h4>
-                  </a>
-                  <h6>
-                    $550
-                  </h6>
+                <a href="">
+                  <h4>Drinks</h4>
+                </a>
+                <h6>
+                  $550
+                </h6>
               </div>
             </div>
           </div>
@@ -232,12 +237,12 @@
                 </a>
               </div>
               <div class="cate__item__text">
-                  <a href="">
-                    <h4>Lunch</h4>
-                  </a>
-                  <h6>
-                    $650
-                  </h6>
+                <a href="">
+                  <h4>Lunch</h4>
+                </a>
+                <h6>
+                  $650
+                </h6>
               </div>
             </div>
           </div>
@@ -251,12 +256,12 @@
                 </a>
               </div>
               <div class="cate__item__text">
-                  <a href="">
-                    <h4>Bakery</h4>
-                  </a>
-                  <h6>
-                    $550
-                  </h6>
+                <a href="">
+                  <h4>Bakery</h4>
+                </a>
+                <h6>
+                  $550
+                </h6>
               </div>
             </div>
           </div>
@@ -270,12 +275,12 @@
                 </a>
               </div>
               <div class="cate__item__text">
-                  <a href="">
-                    <h4>Desserts</h4>
-                  </a>
-                  <h6>
-                    $750
-                  </h6>
+                <a href="">
+                  <h4>Desserts</h4>
+                </a>
+                <h6>
+                  $750
+                </h6>
               </div>
             </div>
           </div>
@@ -289,12 +294,12 @@
                 </a>
               </div>
               <div class="cate__item__text">
-                  <a href="">
-                    <h4>Pizza</h4>
-                  </a>
-                  <h6>
-                    $850
-                  </h6>
+                <a href="">
+                  <h4>Pizza</h4>
+                </a>
+                <h6>
+                  $850
+                </h6>
               </div>
             </div>
           </div>
@@ -309,7 +314,7 @@
   <div style="margin: 8px auto; display: block; text-align:center;"></div>
 
   <!-- FEATURES -->
-  <section id="features">
+  <section id="features" class="py-5">
     <div class="container py-lg-5 py-md-3 py-3">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -330,7 +335,7 @@
           <div class="box-wrap">
             <div class="box-wrap-grid">
               <div class="icon">
-                <span class="fa fa-shield"></span>
+                <i class="fa-sharp fa-solid fa-shield-halved"></i>
               </div>
               <div class="info">
                 <p>02</p>
@@ -340,7 +345,7 @@
             <p class="mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
           <div class="box-wrap">
             <div class="box-wrap-grid">
               <div class="icon">
@@ -401,20 +406,403 @@
   </section>
 
   <!-- CONTACT -->
+  <section class="contact py-5">
+    <div class="container py-4 pt-lg-2 pb-lg-4">
+      <div class="contact__content text-center py-lg-5">
+        <h3 class="px-lg-5">Deliciousness jumping into the mouth.</h3>
+        <div class="contact__button pb-lg-5">
+          <button class="mt-sm-5 mr-2 mr-lg-4 mt-4">Read More
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <button class="mt-4 mt-sm-5">Contact Us
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- STATICS -->
+  <section class="statics py-4 py-lg-0 py-md-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mt-md-0 mt-4">
+          <div class="statics__item">
+            <i class="fa-solid fa-building"></i>
+            <div class="counter">15,100</div>
+            <p>Branches</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mt-md-0 mt-4">
+          <div class="statics__item">
+            <i class="fa-solid fa-building"></i>
+            <div class="counter">19,256</div>
+            <p>Food Items</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mt-md-0 mt-4">
+          <div class="statics__item">
+            <i class="fa-solid fa-building"></i>
+            <div class="counter">12,100</div>
+            <p>Chefs</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mt-md-0 mt-4">
+          <div class="statics__item">
+            <i class="fa-solid fa-building"></i>
+            <div class="counter">2,560</div>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video" id="video">
+    <div class="video__content py-5">
+      <div class="container py-lg-5">
+        <div class="video__image">
+          <div class="video__button">
+            <a href="#small-dialog" class="open-popup-link popup-with-zoom-animation">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+          <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
+            allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- BLOG -->
+  <section class="blog py-5">
+    <div class="container py-2 pg-md-5">
+      <div class="blog__title text-center">
+        <h6 class="title__h6">Latest Posts</h6>
+        <h3 class="title__h3">Blog Posts</h3>
+      </div>
+      <div class="blog__content">
+        <div class="row">
+          <div class="blog__item col-md-6 col-lg-4 mt-5">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                <a href="#">
+                  <img class="card-img-bottom d-block radius-image" src="./img/banner1.jpg" alt="blog-image-1">
+                </a>
+                <div class="blog__image-tag">
+                  <a href="#">Reciepe</a>
+                  <span><i class="fa-regular fa-clock"></i> 10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <a class="blog__heading" href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                <div class="blog__footer mt-3">
+                  <div class="blog__item-author">
+                    <a class="read" href="#">
+                      <img src="./img/team1.jpg" alt="author1">
+                      <a href="#">Rashed Kabir</a>
+                    </a>
+                  </div>
+                  <a class="read" href="#">Read More
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog__item col-md-6 col-lg-4 mt-5">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                <a href="#">
+                  <img class="card-img-bottom d-block radius-image" src="./img/banner1.jpg" alt="blog-image-1">
+                </a>
+                <div class="blog__image-tag">
+                  <a href="#">Reciepe</a>
+                  <span><i class="fa-regular fa-clock"></i> 10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <a class="blog__heading" href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                <div class="blog__footer mt-3">
+                  <div class="blog__item-author">
+                    <a href="#">
+                      <img src="./img/team1.jpg" alt="author1">
+                      <a href="#">Rashed Kabir</a>
+                    </a>
+                  </div>
+                  <a class="read" href="#">Read More
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog__item col-md-6 col-lg-4 mt-5">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                <a href="#">
+                  <img class="card-img-bottom d-block radius-image" src="./img/banner1.jpg" alt="blog-image-1">
+                </a>
+                <div class="blog__image-tag">
+                  <a href="#">Reciepe</a>
+                  <span><i class="fa-regular fa-clock"></i> 10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <a class="blog__heading" href="#">The Best Cookie Recipes To Bake This Weekend</a>
+                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                <div class="blog__footer mt-3">
+                  <div class="blog__item-author">
+                    <a href="#">
+                      <img src="./img/team1.jpg" alt="author1">
+                      <a href="#">Rashed Kabir</a>
+                    </a>
+                  </div>
+                  <a class="read" href="#">Read More
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
   <!-- TESTIMONIALS -->
-
+  <section class="testimonials py-5">
+    <div class="container pt-md-3 pt-lg-5">
+      <div class="testimonials__title text-center mb-5">
+        <h6 class="title__h6">Testimonials</h6>
+        <h3 class="title__h3">What People Say</h3>
+      </div>
+      <div class="testimonials__content">
+        <div class="owl-carousel owl-theme text-center">
+          <div class="testimonials__item mb-4">
+            <a class="testimonials__img" href="#">
+              <img src="./img/team1.jpg" alt="testimonial1"></a>
+            <blockquote>
+              <q>
+                OMG! I cannot believe. It's Awesome
+              </q>
+            </blockquote>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quod harum optio porro placeat rerum
+              voluptates possimus, officia, iusto vel debitis, culpa amet ipsum perferendis id excepturi dolorum aliquam
+              atque quisquam voluptate quasi velit? Tempore nostrum placeat repudiandae quo suscipit!</p>
+            <div class="testimonials__info text-center mt-4">
+              <h3>John Wilson</h3>
+              <p>Customer</p>
+            </div>
+          </div>
+          <div class="testimonials__item mb-4">
+            <a class="testimonials__img" href="#">
+              <img src="./img/team1.jpg" alt="testimonial1"></a>
+            <blockquote>
+              <q>
+                OMG! I cannot believe. It's Awesome
+              </q>
+            </blockquote>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quod harum optio porro placeat rerum
+              voluptates possimus, officia, iusto vel debitis, culpa amet ipsum perferendis id excepturi dolorum aliquam
+              atque quisquam voluptate quasi velit? Tempore nostrum placeat repudiandae quo suscipit!</p>
+            <div class="testimonials__info text-center mt-4">
+              <h3>John Wilson</h3>
+              <p>Customer</p>
+            </div>
+          </div>
+          <div class="testimonials__item mb-4">
+            <a class="testimonials__img" href="#">
+              <img src="./img/team1.jpg" alt="testimonial1"></a>
+            <blockquote>
+              <q>
+                OMG! I cannot believe. It's Awesome
+              </q>
+            </blockquote>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quod harum optio porro placeat rerum
+              voluptates possimus, officia, iusto vel debitis, culpa amet ipsum perferendis id excepturi dolorum aliquam
+              atque quisquam voluptate quasi velit? Tempore nostrum placeat repudiandae quo suscipit!</p>
+            <div class="testimonials__info text-center mt-4">
+              <h3>John Wilson</h3>
+              <p>Customer</p>
+            </div>
+          </div>
+          <div class="testimonials__item mb-4">
+            <a class="testimonials__img" href="#">
+              <img src="./img/team1.jpg" alt="testimonial1"></a>
+            <blockquote>
+              <q>
+                OMG! I cannot believe. It's Awesome
+              </q>
+            </blockquote>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quod harum optio porro placeat rerum
+              voluptates possimus, officia, iusto vel debitis, culpa amet ipsum perferendis id excepturi dolorum aliquam
+              atque quisquam voluptate quasi velit? Tempore nostrum placeat repudiandae quo suscipit!</p>
+            <div class="testimonials__info text-center mt-4">
+              <h3>John Wilson</h3>
+              <p>Customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- FOOTER -->
+  <footer class="py-5">
+    <div class="container py-lg-4">
+      <div class="footer__content row">
+        <div class="footer__item col-sm-7 col-md-6 col-lg-4 pr-lg-5">
+          <h2>Diner</h2>
+          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+            Lorem ipsum dolor sit amet Semper at elit.</p>
+          <div class="footer__icon mt-4">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer__item col-6 col-sm-5 col-md-6 col-lg-2 mt-sm-0 mt-5">
+          <h6>Usefull Links</h6>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog posts</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__item  col-6 col-sm-5 col-md-6 col-lg-2 mt-lg-0 mt-5">
+          <h6>More Info</h6>
+          <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Vision & Value</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__item col-sm-7 col-md-6 col-lg-4 mt-lg-0 mt-5">
+          <h6>Subscribe to our Newsletter</h6>
+          <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+          <form action="#" class="mt-4">
+            <input type="email" placeholder="Your Email Address" required>
+            <button class="w-100 mt-3">Subcibe Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <script src="./js/index.js"></script>
+  <!-- Copyright -->
+  <section class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <p>© 2021 Diner. All rights reserved. Design by <span><a href="#">W3Layouts</a></span></p>
+        </div>
+        <div class="col-lg-4">
+          <ul class="d-flex text-lg-right">
+            <li><a href="#"> Careers</a></li>
+            <li class="mx-lg-5 mx-md-4 mx-3"><a href="#">Privacy Policy</a></li>
+            <li><a href="#"> Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button onclick="topfuntion()" id="movetop" style="display: block;">⤴</button>
+    <script>
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topfuntion() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+
+      }
+
+    </script>
+  </section>
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- Bootstrap 4.6.0 CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+  <!-- Counting Up JS -->
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/jquery.countup.min.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+
+  <!-- Magnific Popup JS -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".popup-with-zoom-animation").magnificPopup({
+        type: "inline",
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: "auto",
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-zoom-in"
+      });
+    });
+  </script>
+
+  <!-- OWL Carousel JS-->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <!-- MAIN JS -->
+  <script src="./js/index.js"></script>
+
 </body>
 
 </html>
