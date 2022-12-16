@@ -843,6 +843,10 @@ div#small-dialog iframe {
     align-items: center;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .blog__content .card-body .blog__footer .blog__item-author {
     display: grid;
     align-items: center;
